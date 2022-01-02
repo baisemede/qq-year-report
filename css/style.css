@@ -1,0 +1,153 @@
+body {
+  font-family: Microsoft YaHei, 微软雅黑, Microsoft JhengHei, 华文细黑, STHeiti,
+    MingLiu;
+}
+.swiper-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(135deg, #0396ff 10%, #abdcff 100%);
+}
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+.page-s {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.p1 {
+  width: 100%;
+  height: 100%;
+  background: url('../img/0/2.jpg') no-repeat left top;
+  background-size: 100% 100%;
+}
+
+/*  箭头动画 */
+#arrow {
+  position: absolute;
+  z-index: 999;
+  -webkit-animation: start 1.5s infinite ease-in-out;
+}
+@keyframes start {
+  0%,
+  30% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -8px);
+  }
+}
+.pos_ab {
+  position: absolute;
+}
+/*  zdog */
+html {
+  height: 100%;
+}
+.container {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  cursor: move;
+}
+.illo1 {
+  position: absolute;
+  bottom: 20%;
+  z-index: 99;
+}
+.illo {
+  position: absolute;
+  bottom: 27%;
+}
+/*  */
+.flex_w {
+  display: flex;
+}
+.qq_report {
+  margin-top: 9px;
+}
+/*  */
+.page_2 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+.footer_img {
+  position: fixed;
+  width: 100%;
+  bottom: 0%;
+  left: 0%;
+  z-index: 999;
+}
+.page_3 {
+  color: white;
+  position: absolute;
+  top: 18%;
+  left: 8%;
+}
+.page_4 {
+  color: white;
+  position: absolute;
+  top: 18%;
+  padding: 0 5%;
+  width: 100%;
+}
+.page_3 div {
+  font-size: 14px;
+}
+.num {
+  font-size: 26px;
+  color: antiquewhite;
+}
+/*  */
+.card {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    135deg,
+    rgb(238, 156, 167) 10%,
+    rgb(255, 221, 225) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.t1 {
+  position: absolute;
+  padding: 5%;
+  border: 5px solid #1e50a2;
+  height: 70vh;
+  width: 90vw;
+  background: white;
+  margin: 0 auto;
+}
+.tt {
+  color: #1e50a2;
+}
+.line {
+  height: 2px;
+  background: #1e50a2;
+  width: 144px;
+  margin-top: 13px;
+}

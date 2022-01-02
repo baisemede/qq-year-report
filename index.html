@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="2022" />
+    <meta name="author" content="Dlemons, 2330929227@qq.com" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>2022</title>
+    <link rel="stylesheet" rel="preload" href="css/swiper.min.css" />
+    <link rel="stylesheet" rel="preload" href="css/animate.min.css" />
+    <link rel="stylesheet" rel="preload" href="css/style.css" />
+    <link rel="stylesheet" rel="preload" href="css/reset.css" />
+    <script
+      rel="preload"
+      src="https://staticfile.qnssl.com/jquery/2.2.1/jquery.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script rel="preload" src="js/swiper.mins.js"></script>
+    <script rel="preload" src="js/swiper.animate.min.js"></script>
+    <script rel="preload" src="js/vconsole.min.js"></script>
+    <script rel="preload" src="js/zdog.js"></script>
+    <script rel="preload" src="js/echarts.js"></script>
+    <script src="./js/text.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/dayjs/1.4.1/dayjs.min.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="page-s swiper-slide swiper-slide2">
+            <div class="pos_ab" style="top: 6%; left: 8%; color: white">
+              <div class="flex_w">
+                <div style="font-size: 90px">2021</div>
+                <div class="qq_report">
+                  <div>QQ</div>
+                  <div style="margin-top: 9px">REPORT</div>
+                </div>
+              </div>
+              <div style="font-size: 43px">年度聊天报告</div>
+            </div>
+            <!-- <img
+              class="ani"
+              src="./img/0/3.png"
+              swiper-animate-effect="fadeInLeft"
+              swiper-animate-duration="1s"
+              swiper-animate-delay="0.8s"
+              style="width: 23.5%; left: 7%; top: 5.3%; position: absolute"
+            /> -->
+            <div
+              class="illo1"
+              style="width: 100%; height: 500px; background-color: transparent"
+            ></div>
+            <div class="container">
+              <canvas class="illo"></canvas>
+            </div>
+          </div>
+          <div class="page-s swiper-slide swiper-slide2 p2">
+            <div class="page_2">
+              <div style="margin-top: 260px; font-size: 30px">我们的2021年</div>
+              <div style="margin-top: 53px; font-size: 24px">
+                让我们坐在时间的长河边
+              </div>
+              <div style="margin-top: 20px; font-size: 23px">
+                望远絮絮细语，吟唱那人生之歌
+              </div>
+            </div>
+          </div>
+          <div class="page-s swiper-slide swiper-slide3 p3">
+            <div class="page_3">
+              <div style="font-size: 22px">
+                今年我们一共发了 <span class="num"> {{msgCount}} </span> 条消息
+              </div>
+              <div style="margin-top: 40px; font-size: 16px">
+                其中有<span class="num"> 7849 </span>是图片 其中有<span
+                  class="num"
+                >
+                  164
+                </span>
+                是表情
+              </div>
+              <div style="margin-top: 40px">
+                说喜欢你 <span class="num"> 59 </span> 次
+              </div>
+              <div style="margin-top: 23px">
+                说想你 <span class="num"> 77 </span> 次
+              </div>
+              <div style="margin-top: 23px">
+                说爱你<span class="num"> 1 </span>次
+              </div>
+              <div style="margin-top: 73px; font-size: 22px">比起在网络</div>
+              <div style="margin-top: 13px; font-size: 22px">
+                我们更喜欢在现实中表达爱意
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="page-s swiper-slide swiper-slide3 p3">
+            <div class="page_4">
+              <div style="font-size: 17px">
+                这一年我们说过的最长的一句话
+                <span class="num"> {{longMsg.count}} </span> 字
+              </div>
+              <div style="font-size: 17px; margin-top: 40px; line-height: 24px">
+                {{longMsg.text}}
+              </div>
+              <div style="font-size: 16px; margin-top: 40px; text-align: right">
+                {{longMsg.time}}
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="page-s swiper-slide swiper-slide3 p3">
+            <div class="page_4">
+              <div style="font-size: 17px">这一年我们说过最晚的一句话</div>
+              <div style="font-size: 17px; margin-top: 20px">
+                在凌晨
+                <span class="num"> 5</span> 点
+              </div>
+              <div style="font-size: 17px; margin-top: 40px; line-height: 24px">
+                生生： 沙发上睡着了我
+              </div>
+              <div
+                style="
+                  font-size: 16px;
+                  margin-top: 40px;
+                  text-align: right;
+                  width: 100%;
+                "
+              >
+                2021-05-05 05:47:50
+              </div>
+              <div style="font-size: 20px; margin-top: 73px">
+                那天在做什么还能记起来吗
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!--   -->
+          <div class="page-s swiper-slide swiper-slide3 p3">
+            <div class="page_4" style="padding: 0 3%">
+              <div style="font-size: 14px">
+                这一年,我们说过最多的词是
+                <span class="num" style="font-size: 20px"> 可以 </span>, 居然有
+                <span class="num" style="font-size: 20px"> 1008 </span> 次
+              </div>
+              <div style="width: 100%; margin-top: 30px">
+                <img src="./img/ci.png" alt="" style="width: 100%" />
+              </div>
+            </div>
+          </div>
+          <!-- 每月  -->
+          <div class="page-s swiper-slide swiper-slide3 p3">
+            <div class="page_4" style="padding: 0 3%">
+              <div style="font-size: 14px">
+                这一年我们
+                <span class="num" style="font-size: 20px">
+                  {{monthStatistics.month}} </span
+                >, 月 说的话最多 有
+                <span class="num" style="font-size: 20px">
+                  {{monthStatistics.count}}
+                </span>
+                条
+              </div>
+              <div style="width: 100%; margin-top: 30px">
+                <div id="main" style="width: 100%; height: 400px"></div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  每天的时间 -->
+          <div class="page-s swiper-slide swiper-slide3 p3">
+            <div class="page_4" style="padding: 0%; left: 3%">
+              <div style="font-size: 14px">
+                这一年我们最喜欢在
+                <span class="num" style="font-size: 20px">
+                  {{timeStatistics.time}} </span
+                >点聊天, 说的话有
+                <span class="num" style="font-size: 20px">
+                  {{timeStatistics.count}}
+                </span>
+                条
+              </div>
+              <div style="width: 100%; margin-top: 30px">
+                <div id="main2" style="width: 100vw; height: 400px"></div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="page-s swiper-slide swiper-slide3 p3">
+            <div class="card">
+              <div class="t1">
+                <div style="font-size: 13vw" class="tt">#2021</div>
+                <div
+                  style="font-size: 5vw; margin-top: 10px; font-weight: bold"
+                  class="tt"
+                >
+                  年度聊天报告
+                </div>
+                <div style="margin-top: 50px">
+                  <div style="font-weight: 700; font-size: 16px">关键词</div>
+                  <div style="font-size: 11vw; margin-top: 13px">可以</div>
+                  <div class="line"></div>
+                </div>
+                <!--  -->
+                <div style="margin-top: 50px">
+                  <div style="font-weight: 700; font-size: 16px">爱意词</div>
+                  <div style="font-size: 11vw; margin-top: 13px">想你</div>
+                  <div class="line"></div>
+                </div>
+                <!--  -->
+                <div style="margin-top: 50px">
+                  <div style="font-weight: 700; font-size: 16px">话痨月</div>
+                  <div style="font-size: 11vw; margin-top: 13px">6月</div>
+                  <div class="line"></div>
+                </div>
+                <!--  -->
+                <div
+                  style="font-size: 15vw; top: 10vh; right: 11vw"
+                  class="pos_ab"
+                >
+                  再见
+                </div>
+                <div
+                  style="font-size: 15vw; top: 18vh; right: 3vw"
+                  class="pos_ab"
+                >
+                  2021
+                </div>
+
+                <img
+                  src="./img/ice-cream.svg"
+                  class="pos_ab"
+                  style="width: 100%; top: 42%; right: -20%"
+                />
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </div>
+
+    <img src="./img/bg.png" class="footer_img" alt="" />
+    <!-- 箭头 -->
+    <img
+      style="
+        position: fixed;
+        left: 42%;
+        bottom: 1%;
+        width: 12%;
+        display: block;
+        z-index: 999999;
+      "
+      id="arrow"
+      src="./img/arrow.png"
+    />
+    <!-- 背景音乐 -->
+    <!-- <audio id="bgyinyue1" preload="auto" loop="loop" autoplay="autoplay">
+            <source class="yinyue" src="./img/bg.mp3" />
+        </audio> -->
+    <script>
+      let app = new Vue({
+        el: '#app',
+        data: {
+          longMsg: {
+            text: '【万达电影】您的购买处理成功，兑换码：2063 0400 2450 63，订单信息：阿凡达，长沙万达影城解放路店，IMAX激光厅（儿童需购票），10排11座，开场时间2021年03月20日19时00分。会员体系全新升级，三重权益尽在万达电影APP。',
+            time: '2021-03-20 18:52:43',
+            count: 124,
+          },
+          msgCount: 52693,
+          monthCount: [
+            {
+              month: '2020-08',
+              count: 846,
+            },
+            {
+              month: '2020-09',
+              count: 4381,
+            },
+            {
+              month: '2020-10',
+              count: 4493,
+            },
+            {
+              month: '2020-11',
+              count: 4697,
+            },
+            {
+              month: '2020-12',
+              count: 4278,
+            },
+            {
+              month: '2021-01',
+              count: 2949,
+            },
+            {
+              month: '2021-02',
+              count: 3235,
+            },
+            {
+              month: '2021-03',
+              count: 1958,
+            },
+            {
+              month: '2021-04',
+              count: 2561,
+            },
+            {
+              month: '2021-05',
+              count: 3095,
+            },
+            {
+              month: '2021-06',
+              count: 4404,
+            },
+            {
+              month: '2021-07',
+              count: 3502,
+            },
+            {
+              month: '2021-08',
+              count: 3050,
+            },
+            {
+              month: '2021-09',
+              count: 2481,
+            },
+            {
+              month: '2021-10',
+              count: 2372,
+            },
+            {
+              month: '2021-11',
+              count: 1994,
+            },
+            {
+              month: '2021-12',
+              count: 2264,
+            },
+            {
+              month: '2022-01',
+              count: 133,
+            },
+          ],
+          timeCount: [
+            {
+              time: '01',
+              count: 322,
+            },
+            {
+              time: '02',
+              count: 135,
+            },
+            {
+              time: '03',
+              count: 175,
+            },
+            {
+              time: '04',
+              count: 69,
+            },
+            {
+              time: '05',
+              count: 17,
+            },
+            {
+              time: '06',
+              count: 142,
+            },
+            {
+              time: '07',
+              count: 224,
+            },
+            {
+              time: '08',
+              count: 3800,
+            },
+            {
+              time: '09',
+              count: 3478,
+            },
+            {
+              time: '10',
+              count: 2180,
+            },
+            {
+              time: '11',
+              count: 3481,
+            },
+            {
+              time: '12',
+              count: 5502,
+            },
+            {
+              time: '13',
+              count: 3618,
+            },
+            {
+              time: '14',
+              count: 2407,
+            },
+            {
+              time: '15',
+              count: 2413,
+            },
+            {
+              time: '16',
+              count: 2882,
+            },
+            {
+              time: '17',
+              count: 4049,
+            },
+            {
+              time: '18',
+              count: 6002,
+            },
+            {
+              time: '19',
+              count: 3632,
+            },
+            {
+              time: '20',
+              count: 2223,
+            },
+            {
+              time: '21',
+              count: 1395,
+            },
+            {
+              time: '22',
+              count: 1314,
+            },
+            {
+              time: '23',
+              count: 2163,
+            },
+            {
+              time: '00',
+              count: 1070,
+            },
+          ],
+          sum: 52693,
+        },
+        computed: {
+          // 计算属性的 getter
+          monthStatistics() {
+            let array = this.monthCount.slice(5, 16);
+            let obj = {
+              month: 1,
+              count: 0,
+            };
+
+            for (let index = 0; index < array.length; index++) {
+              const element = array[index];
+              if (element.count > obj.count) {
+                obj.count = element.count;
+                obj.month = index + 1;
+              }
+            }
+            return obj;
+          },
+          timeStatistics() {
+            let array = this.timeCount;
+            let obj = {
+              time: 1,
+              count: 0,
+            };
+
+            for (let index = 0; index < array.length; index++) {
+              const element = array[index];
+              if (element.count > obj.count) {
+                obj.count = element.count;
+                obj.time = index + 1;
+              }
+            }
+            return obj;
+          },
+        },
+        methods: {},
+      });
+    </script>
+    <script>
+      var mySwiper;
+      window.onload = function () {
+        // xiayiye();
+      };
+      mySwiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        mousewheelControl: true,
+        onInit: function (swiper) {
+          swiperAnimateCache(swiper);
+          swiperAnimate(swiper);
+        },
+        onSliderMove: function (swiper) {},
+
+        onSlideChangeEnd: function (swiper) {
+          swiperAnimate(swiper);
+          var sindex = mySwiper.activeIndex;
+          console.log(sindex);
+          if (sindex == 6) {
+            myChart.setOption(option);
+          }
+          if (sindex == 7) {
+            myChart2.setOption(option2);
+          }
+          if (sindex == 8) {
+            $('#array').css('display', 'none');
+            $('.footer_img').css('display', 'none');
+          } else {
+            $('#array').css('display', 'block');
+            $('.footer_img').css('display', 'block');
+          }
+        },
+        onTransitionEnd: function (swiper) {
+          swiperAnimate(swiper);
+          var sindex = mySwiper.activeIndex;
+        },
+
+        watchSlidesProgress: true,
+
+        onProgress: function (swiper) {
+          for (var i = 0; i < swiper.slides.length; i++) {
+            var slide = swiper.slides[i];
+            var progress = slide.progress;
+            var translate = (progress * swiper.height) / 4;
+            scale = 1 - Math.min(Math.abs(progress * 0.5), 1);
+            var opacity = 1 - Math.min(Math.abs(progress / 2), 0.5);
+            slide.style.opacity = opacity;
+            es = slide.style;
+            es.webkitTransform =
+              es.MsTransform =
+              es.msTransform =
+              es.MozTransform =
+              es.OTransform =
+              es.transform =
+                'translate3d(0,' +
+                translate +
+                'px,-' +
+                translate +
+                'px) scaleY(' +
+                scale +
+                ')';
+          }
+        },
+        onSetTransition: function (swiper, speed) {
+          for (var i = 0; i < swiper.slides.length; i++) {
+            es = swiper.slides[i].style;
+            es.webkitTransitionDuration =
+              es.MsTransitionDuration =
+              es.msTransitionDuration =
+              es.MozTransitionDuration =
+              es.OTransitionDuration =
+              es.transitionDuration =
+                speed + 'ms';
+          }
+        },
+      });
+      // LockPage();
+      LockUpPage();
+      // tiaozhuan(8);
+      //下一页
+      function xiayiye() {
+        UnLockPage();
+        mySwiper.slideNext();
+      }
+
+      //上一页
+      function shangyiye() {
+        mySwiper.slidePrev();
+      }
+
+      //跳转页面
+      function tiaozhuan(pageindex, speed) {
+        //pageindex 索引值  从0开始
+        mySwiper.slideTo(pageindex, speed);
+      }
+
+      //锁定向下滑动
+      function LockPage() {
+        mySwiper.lockSwipeToNext();
+      }
+
+      //锁定向上滑动
+      function LockUpPage() {
+        mySwiper.lockSwipeToPrev();
+      }
+
+      //解除锁定
+      function UnLockPage() {
+        mySwiper.unlockSwipeToNext();
+      }
+    </script>
+
+    <script>
+      var myChart2 = echarts.init(document.getElementById('main2'));
+      var option2 = {
+        xAxis: {
+          type: 'category',
+          data: [
+            '0点',
+            '1点',
+            '2点',
+            '3点',
+            '4点',
+            '5点',
+            '6点',
+            '7点',
+            '8点',
+            '9点',
+            '10点',
+            '11点',
+            '12点',
+            '13点',
+            '14点',
+            '15点',
+            '16点',
+            '17点',
+            '18点',
+            '19点',
+            '20点',
+            '21点',
+            '22点',
+            '23点',
+          ],
+        },
+        yAxis: {
+          type: 'value',
+        },
+        series: [
+          {
+            data: [],
+            type: 'line',
+            smooth: true,
+          },
+        ],
+      };
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main'));
+      // 指定图表的配置项和数据
+      var option = {
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: {
+            type: 'shadow',
+          },
+        },
+        grid: {
+          left: '3%',
+          right: '4%',
+          bottom: '3%',
+          containLabel: true,
+        },
+        xAxis: [
+          {
+            type: 'category',
+            data: [
+              '1月',
+              '2月',
+              '3月',
+              '4月',
+              '5月',
+              '6月',
+              '7月',
+              '8月',
+              '9月',
+              '10月',
+              '11月',
+              '12月',
+            ],
+            axisTick: {
+              alignWithLabel: true,
+            },
+          },
+        ],
+        yAxis: [
+          {
+            type: 'value',
+          },
+        ],
+        series: [
+          {
+            name: 'Direct',
+            type: 'bar',
+            barWidth: '60%',
+            data: [],
+          },
+        ],
+      };
+
+      let arr1 = [...app.monthCount];
+      let arr2 = [...app.timeCount];
+      for (let index = 0; index < arr2.length; index++) {
+        const count = arr2[index].count;
+        option2.series[0].data.push(count);
+      }
+      for (let index = 0; index < arr1.length; index++) {
+        if (index > 4 && index < 17) {
+          const count = arr1[index].count;
+          option.series[0].data.push(count);
+        }
+      }
+    </script>
+    <script>
+      // let arr = [];
+      // let str = ['2020-', '2021-', '2022-'];
+      // let longMsg = {
+      //   text: '',
+      //   time: '',
+      //   count: '',
+      // };
+      // let msgCount = 0;
+      // let monthCount = [
+      //   {
+      //     month: '2020-08',
+      //     count: 0,
+      //   },
+      //   {
+      //     month: '2020-09',
+      //     count: 0,
+      //   },
+      //   {
+      //     month: '2020-10',
+      //     count: 0,
+      //   },
+      //   {
+      //     month: '2020-11',
+      //     count: 0,
+      //   },
+      //   {
+      //     month: '2020-12',
+      //     count: 0,
+      //   },
+      //   {
+      //     month: '2021-01',
+      //     count: 0,
+      //   },
+      //   {
+      //     month: '2021-02',
+      //     count: 0,
+      //   },
+      //   {
+      //     month: '2021-03',
+      //     count: 0,
+      //   },
+      //   {
+      //     month: '2021-04',
+      //     count: 0,
+      //   },
+      //   {
+      //     month: '2021-05',
+      //     count: 0,
+      //   },
+      //   {
+      //     month: '2021-06',
+      //     count: 0,
+      //   },
+      //   {
+      //     month: '2021-07',
+      //     count: 0,
+      //   },
+      //   {
+      //     month: '2021-08',
+      //     count: 0,
+      //   },
+      //   {
+      //     month: '2021-09',
+      //     count: 0,
+      //   },
+      //   {
+      //     month: '2021-10',
+      //     count: 0,
+      //   },
+      //   {
+      //     month: '2021-11',
+      //     count: 0,
+      //   },
+      //   {
+      //     month: '2021-12',
+      //     count: 0,
+      //   },
+      //   {
+      //     month: '2022-01',
+      //     count: 0,
+      //   },
+      // ];
+      // let timeCount = [
+      //   {
+      //     time: '01',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '02',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '03',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '04',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '05',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '06',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '07',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '08',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '09',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '10',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '11',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '12',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '13',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '14',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '15',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '16',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '17',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '18',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '19',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '20',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '21',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '22',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '23',
+      //     count: 0,
+      //   },
+      //   {
+      //     time: '00',
+      //     count: 0,
+      //   },
+      // ];
+      // for (let index = 0; index < text.length; index++) {
+      //   const item = text[index];
+      //   if (item) {
+      //     let obj = {};
+      //     if (year(item.slice(0, 6))) {
+      //       obj.time = item.slice(0, 19);
+      //       obj.name = item.slice(20, item.length);
+      //       arr.push(obj);
+      //     } else {
+      //       if (
+      //         item.length > longMsg.text.length &&
+      //         arr[arr.length - 1].time.slice(0, 4) != '2020'
+      //       ) {
+      //         longMsg.text = item;
+      //         longMsg.count = item.length;
+      //         longMsg.time = arr[arr.length - 1].time;
+      //       }
+      //       arr[arr.length - 1].text = item;
+      //     }
+      //   }
+      // }
+
+      // for (let index = 0; index < arr.length; index++) {
+      //   const item = arr[index];
+      //   for (let index = 0; index < monthCount.length; index++) {
+      //     const element = monthCount[index];
+      //     if (!msg(item.time)) {
+      //       console.log(item);
+      //     }
+      //     if (item.time.includes(element.month)) {
+      //       element.count = element.count + 1;
+      //       break;
+      //     }
+      //   }
+      // }
+      // /*  */
+      // for (let index = 0; index < arr.length; index++) {
+      //   const item = arr[index];
+      //   for (let index = 0; index < timeCount.length; index++) {
+      //     const element = timeCount[index];
+      //     if (item.time.slice(11, 13) == element.time) {
+      //       element.count = element.count + 1;
+      //       break;
+      //     }
+      //   }
+      // }
+      // /*  */
+      // for (let i = 0; i < monthCount.length; i++) {
+      //   msgCount += monthCount[i].count;
+      // }
+      // let sum = 0;
+      // for (let i = 0; i < timeCount.length; i++) {
+      //   sum += timeCount[i].count;
+      // }
+      // function year(i) {
+      //   return (
+      //     i.includes('2020-') || i.includes('2021-') || i.includes('2022-')
+      //   );
+      // }
+      // function msg(i) {
+      //   return (
+      //     i.includes('2020-08') ||
+      //     i.includes('2020-09') ||
+      //     i.includes('2020-10') ||
+      //     i.includes('2020-11') ||
+      //     i.includes('2020-12') ||
+      //     i.includes('2021-01') ||
+      //     i.includes('2021-02') ||
+      //     i.includes('2021-03') ||
+      //     i.includes('2021-04') ||
+      //     i.includes('2021-05') ||
+      //     i.includes('2021-06') ||
+      //     i.includes('2021-07') ||
+      //     i.includes('2021-08') ||
+      //     i.includes('2021-09') ||
+      //     i.includes('2021-10') ||
+      //     i.includes('2021-11') ||
+      //     i.includes('2021-12') ||
+      //     i.includes('2022-01')
+      //   );
+      // }
+      // console.log(arr);
+    </script>
+    <script>
+      // Made with Zdog
+
+      var BokehShape = Zdog.Shape.subclass({
+        bokehSize: 5,
+        bokehLimit: 64,
+      });
+
+      BokehShape.prototype.updateBokeh = function () {
+        // bokeh 0 -> 1
+        this.bokeh = Math.abs(this.sortValue) / this.bokehLimit;
+        this.bokeh = Math.max(0, Math.min(1, this.bokeh));
+        return this.bokeh;
+      };
+
+      BokehShape.prototype.getLineWidth = function () {
+        return this.stroke + this.bokehSize * this.bokeh * this.bokeh;
+      };
+
+      BokehShape.prototype.getBokehAlpha = function () {
+        var alpha = 1 - this.bokeh;
+        alpha *= alpha;
+        return alpha * 0.8 + 0.2;
+      };
+
+      BokehShape.prototype.renderCanvasDot = function (ctx) {
+        this.updateBokeh();
+        ctx.globalAlpha = this.getBokehAlpha(); // set opacity
+        Zdog.Shape.prototype.renderCanvasDot.apply(this, arguments);
+        ctx.globalAlpha = 1; // reset
+      };
+
+      BokehShape.prototype.renderPath = function (ctx, renderer) {
+        this.updateBokeh();
+        // set opacity
+        if (renderer.isCanvas) {
+          ctx.globalAlpha = this.getBokehAlpha();
+        }
+        Zdog.Shape.prototype.renderPath.apply(this, arguments);
+        // reset opacity
+        if (renderer.isCanvas) {
+          ctx.globalAlpha = 1;
+        }
+      };
+
+      var TAU = Zdog.TAU;
+
+      function makeMadeline(isGood, colors, options) {
+        var rotor = new Zdog.Anchor(options);
+
+        var body = new Zdog.Group({
+          addTo: rotor,
+          rotate: { x: -TAU / 8 },
+          translate: { z: -48 },
+          updateSort: true,
+        });
+
+        var head = new Zdog.Anchor({
+          addTo: body,
+          translate: { y: -11, z: -2 },
+          rotate: { x: TAU / 8 },
+        });
+
+        // face
+        var face = new Zdog.Ellipse({
+          diameter: 6,
+          addTo: head,
+          translate: { z: 4 },
+          stroke: 8,
+          color: colors.skin,
+        });
+
+        var eyeGroup = new Zdog.Group({
+          addTo: face,
+          translate: { z: face.stroke / 2 - 0.5 },
+        });
+
+        // eyes
+        [-1, 1].forEach(function (xSide) {
+          // cheek blush
+          if (isGood) {
+            new Zdog.Ellipse({
+              width: 2,
+              height: 1.3,
+              addTo: eyeGroup,
+              translate: { x: 4.5 * xSide, y: 3, z: -1 },
+              rotate: { y: (-TAU / 16) * xSide },
+              stroke: 1,
+              color: '#FA8',
+              fill: true,
+            });
+          }
+
+          var eyeX = 3.5 * xSide;
+
+          // eye
+          new Zdog.Ellipse({
+            width: 0.75,
+            height: 1.5,
+            addTo: eyeGroup,
+            color: colors.eye,
+            translate: { x: eyeX },
+            stroke: 2,
+            fill: true,
+          });
+
+          // eye brow
+          new Zdog.Ellipse({
+            addTo: eyeGroup,
+            height: 3,
+            width: 1.2,
+            quarters: 2,
+            translate: { x: eyeX, y: -3 },
+            rotate: { z: -TAU / 4 + 0.15 * xSide * (isGood ? 1 : -1) },
+            color: colors.hair,
+            stroke: 1,
+            fill: false,
+            closed: true,
+          });
+        });
+
+        // hair ball
+        new Zdog.Shape({
+          path: [{ x: -1 }, { x: 1 }, { z: -4 }],
+          addTo: head,
+          translate: { y: -4, z: -1 },
+          stroke: 18,
+          color: colors.hair,
+        });
+
+        var bang = new Zdog.Shape({
+          path: [
+            {},
+            {
+              arc: [
+                { z: 4, y: 4 },
+                { z: 0, y: 8 },
+              ],
+            },
+          ],
+          addTo: head,
+          translate: { x: 2, y: -7.5, z: 6 },
+          rotate: { x: 0.5, z: -0.5 },
+          stroke: 4,
+          color: colors.hair,
+          closed: false,
+        });
+        bang.copy({
+          translate: { x: 5, y: -6, z: 5 },
+          rotate: { x: -0.3, z: -0.5 },
+        });
+        bang.copy({
+          translate: { x: 5, y: -6, z: 3 },
+          rotate: { y: -0.7, z: -1 },
+        });
+
+        // left side
+        bang.copy({
+          translate: { x: -2, y: -7.5, z: 6 },
+          rotate: { x: 0, z: (TAU / 16) * 6 },
+        });
+        bang.copy({
+          translate: { x: -5, y: -6, z: 5 },
+          rotate: { x: 0, z: TAU / 4 },
+        });
+        bang.copy({
+          translate: { x: -5, y: -6, z: 3 },
+          rotate: { y: 0.7, z: 1 },
+        });
+
+        // hair cover
+        new Zdog.Shape({
+          path: [{ x: -3 }, { x: 3 }],
+          addTo: head,
+          stroke: 7,
+          translate: { y: -8, z: 5 },
+          color: colors.hair,
+        });
+
+        // trail locks
+
+        var trailLock = new Zdog.Shape({
+          path: [
+            { y: -4, z: 0 },
+            {
+              bezier: [
+                { y: -10, z: -14 },
+                { y: 0, z: -16 },
+                { y: 0, z: -26 },
+              ],
+            },
+          ],
+          addTo: head,
+          translate: { z: -4, y: 0 },
+          stroke: 10,
+          color: colors.hair,
+          closed: false,
+        });
+
+        trailLock.copy({
+          translate: { x: -3, z: -4 },
+          rotate: { z: -TAU / 8 },
+          stroke: 8,
+        });
+        trailLock.copy({
+          translate: { x: 3, z: -4 },
+          rotate: { z: TAU / 8 },
+          stroke: 8,
+        });
+        trailLock.copy({
+          translate: { y: 2 },
+          // rotate: { z: TAU/2 },
+          scale: { y: 0.5 },
+          stroke: 8,
+        });
+
+        // ----- torso ----- //
+
+        // 2nd rib
+        var torsoRib = new Zdog.Ellipse({
+          width: 12,
+          height: 10,
+          addTo: body,
+          rotate: { x: -TAU / 4 },
+          translate: { y: -1 },
+          stroke: 6,
+          color: colors.parkaLight,
+          fill: true,
+        });
+        // neck rib
+        torsoRib.copy({
+          width: 6,
+          height: 6,
+          translate: { y: -5 },
+        });
+        // 3rd rib
+        torsoRib.copy({
+          translate: { y: 3 },
+        });
+        // 4th rib
+        torsoRib.copy({
+          translate: { y: 7 },
+          color: colors.parkaDark,
+        });
+        // waist
+        new Zdog.Ellipse({
+          width: 10,
+          height: 8,
+          addTo: body,
+          rotate: { x: -TAU / 4 },
+          translate: { y: 11 },
+          stroke: 4,
+          color: colors.tight,
+          fill: true,
+        });
+
+        // arms
+        [-1, 1].forEach(function (xSide) {
+          var isLeft = xSide == 1;
+          // shoulder ball
+          new Zdog.Shape({
+            addTo: body,
+            stroke: 6,
+            translate: { x: 6 * xSide, y: -5, z: -1 },
+            color: colors.parkaLight,
+          });
+
+          var shoulderJoint = new Zdog.Anchor({
+            addTo: body,
+            translate: { x: 9 * xSide, y: -3, z: -2 },
+            rotate: isLeft
+              ? { x: (TAU / 8) * 3, z: -TAU / 32 }
+              : { z: (TAU / 16) * 2, x: (-TAU / 16) * 2 },
+          });
+
+          // top shoulder rib
+          var armRib = new Zdog.Ellipse({
+            diameter: 2,
+            rotate: { x: -TAU / 4 },
+            addTo: shoulderJoint,
+            translate: { x: 0 * xSide },
+            stroke: 6,
+            color: colors.parkaLight,
+            fill: true,
+          });
+          armRib.copy({
+            translate: { y: 4 },
+          });
+
+          var elbowJoint = new Zdog.Anchor({
+            addTo: shoulderJoint,
+            translate: { y: 8 },
+            rotate: isLeft ? {} : { z: TAU / 8 },
+          });
+
+          armRib.copy({
+            addTo: elbowJoint,
+            translate: { x: 0, y: 0 },
+          });
+          armRib.copy({
+            addTo: elbowJoint,
+            translate: { y: 4 },
+            color: colors.parkaDark,
+          });
+
+          // hand
+          new Zdog.Shape({
+            addTo: elbowJoint,
+            translate: { y: 9, z: -1 },
+            stroke: 8,
+            color: colors.skin,
+          });
+
+          // ----- legs ----- //
+          var knee = { y: 7 };
+          var thigh = new Zdog.Shape({
+            path: [{ y: 0 }, knee],
+            addTo: body,
+            translate: { x: 4 * xSide, y: 13 },
+            rotate: isLeft ? {} : { x: (TAU / 16) * 3, z: TAU / 16 },
+            stroke: 8,
+            color: colors.tight,
+          });
+
+          var shin = new Zdog.Shape({
+            path: [{ y: 0 }, { y: 8 }],
+            addTo: thigh,
+            stroke: 6,
+            translate: knee,
+            rotate: isLeft ? {} : { x: (-TAU / 16) * 5 },
+            color: colors.tight,
+          });
+        });
+
+        // butt
+        new Zdog.Shape({
+          path: [{ x: -3 }, { x: 3 }],
+          visible: false,
+          addTo: body,
+          translate: { y: 11, z: -2 },
+          stroke: 8,
+          color: colors.tight,
+        });
+      }
+
+      window.makeBird = function (options) {
+        var spin = options.spin || 0;
+
+        var arrow = new Zdog.Anchor({
+          addTo: options.addTo,
+          scale: 2 / 3,
+          rotate: { z: spin },
+        });
+
+        var bird = new Zdog.Group({
+          addTo: arrow,
+          translate: { x: 87 },
+          rotate: { x: -spin },
+        });
+
+        // bird body
+        new Zdog.Shape({
+          path: [
+            { x: -3, y: 0 },
+            {
+              arc: [
+                { x: -2, y: 1.5 },
+                { x: 0, y: 1.5 },
+              ],
+            },
+            {
+              arc: [
+                { x: 2, y: 1.5 },
+                { x: 2, y: 0 },
+              ],
+            },
+          ],
+          addTo: bird,
+          translate: { x: 0.5 },
+          stroke: 3,
+          color: options.color,
+          fill: true,
+        });
+
+        // bird head
+        new Zdog.Shape({
+          translate: { x: 4, y: -1 },
+          addTo: bird,
+          stroke: 4,
+          color: options.color,
+        });
+
+        // beak
+        new Zdog.Shape({
+          path: [
+            { x: 0, y: -1 },
+            { x: 3, y: 0 },
+            { x: 0, y: 1 },
+          ],
+          addTo: bird,
+          translate: { x: 5, y: -1 },
+          stroke: 1,
+          color: options.color,
+          fill: true,
+        });
+
+        // tail feather
+        new Zdog.Shape({
+          path: [
+            { x: -3, z: -2 },
+            { x: 0, z: 0 },
+            { x: -3, z: 2 },
+          ],
+          addTo: bird,
+          translate: { x: -4, y: 0 },
+          stroke: 2,
+          color: options.color,
+          fill: true,
+        });
+
+        var wing = new Zdog.Shape({
+          path: [
+            { x: 3, y: 0 },
+            { x: -1, y: -9 },
+            {
+              arc: [
+                { x: -5, y: -4 },
+                { x: -3, y: 0 },
+              ],
+            },
+          ],
+          addTo: bird,
+          translate: { z: -1.5 },
+          rotate: { x: TAU / 8 },
+          stroke: 1,
+          color: options.color,
+          fill: true,
+        });
+
+        wing.copy({
+          translate: { z: 1.5 },
+          scale: { z: -1 },
+          rotate: { x: -TAU / 8 },
+        });
+      };
+
+      // -------------------------- demo -------------------------- //
+
+      var illoElem = document.querySelector('.illo');
+      var w = 160;
+      var h = 160;
+      var minWindowSize = Math.min(window.innerWidth, window.innerHeight);
+      var zoom = Math.min(5, Math.floor(minWindowSize / w));
+      illoElem.setAttribute('width', w * zoom);
+      illoElem.setAttribute('height', h * zoom);
+
+      var isSpinning = true;
+      var TAU = Zdog.TAU;
+
+      var illo = new Zdog.Illustration({
+        element: illoElem,
+        zoom: zoom,
+        rotate: { y: -TAU / 4 },
+        dragRotate: true,
+        onDragStart: function () {
+          isSpinning = false;
+        },
+      });
+
+      var madColor = {
+        skin: '#FD9',
+        hair: '#D53',
+        parkaLight: '#67F',
+        parkaDark: '#35D',
+        tight: '#742',
+        eye: '#333',
+      };
+      var badColor = {
+        skin: '#EBC',
+        hair: '#D4B',
+        parkaLight: '#85A',
+        parkaDark: '#527',
+        tight: '#412',
+        eye: '#D02',
+      };
+
+      var glow = 'hsla(60, 100%, 80%, 0.3)';
+      var featherGold = '#FE5';
+
+      // -- illustration shapes --- //
+
+      makeMadeline(true, madColor, {
+        addTo: illo,
+      });
+      makeMadeline(false, badColor, {
+        addTo: illo,
+        rotate: { y: TAU / 2 },
+      });
+
+      // ----- feather ----- //
+
+      var feather = new Zdog.Group({
+        addTo: illo,
+        rotate: { y: -TAU / 4 },
+      });
+
+      (function () {
+        var featherPartCount = 8;
+        var radius = 12;
+        var angleX = TAU / featherPartCount / 2;
+        var sector = (TAU * radius) / 2 / featherPartCount;
+
+        for (var i = 0; i < featherPartCount; i++) {
+          var curve = Math.cos(
+            ((i / featherPartCount) * TAU * 3) / 4 + (TAU * 1) / 4
+          );
+          var x = 4 - curve * 2;
+          var y0 = sector / 2;
+          // var y2 = -sector/2;
+          var isLast = i == featherPartCount - 1;
+          var y3 = isLast ? sector * -1 : -y0;
+          var z1 = -radius + 2 + curve * -1.5;
+          var z2 = isLast ? -radius : -radius;
+          var barb = new Zdog.Shape({
+            path: [
+              { x: 0, y: y0, z: -radius },
+              { x: x, y: -sector / 2, z: z1 },
+              { x: x, y: (-sector * 3) / 4, z: z1 },
+              { x: 0, y: y3, z: z2 },
+            ],
+            addTo: feather,
+            rotate: { x: angleX * -i + TAU / 8 },
+            stroke: 1,
+            color: featherGold,
+            fill: true,
+          });
+          barb.copy({
+            scale: { x: -1 },
+          });
+        }
+
+        // rachis
+        var rachis = new Zdog.Ellipse({
+          addTo: feather,
+          diameter: radius * 2,
+          quarters: 2,
+          rotate: { y: -TAU / 4 },
+          stroke: 2,
+          color: featherGold,
+        });
+        rachis.copy({
+          stroke: 8,
+          color: glow,
+          rotate: { y: -TAU / 4, x: -0.5 },
+        });
+      })();
+
+      // ----- rods ----- //
+
+      (function () {
+        var rodCount = 14;
+        for (var i = 0; i < rodCount; i++) {
+          var zRotor = new Zdog.Anchor({
+            addTo: illo,
+            rotate: { z: (TAU / rodCount) * i },
+          });
+
+          var y0 = 32;
+          var y1 = y0 + 2 + Math.random() * 24;
+          new BokehShape({
+            path: [{ y: y0 }, { y: y1 }],
+            addTo: zRotor,
+            rotate: { x: ((Math.random() * 2 - 1) * TAU) / 8 },
+            color: madColor.skin,
+            stroke: 1,
+            bokehSize: 6,
+            bokehLimit: 70,
+          });
+        }
+      })();
+
+      // dots
+
+      (function () {
+        var dotCount = 64;
+
+        for (var i = 0; i < dotCount; i++) {
+          var yRotor = new Zdog.Anchor({
+            addTo: illo,
+            rotate: { y: (TAU / dotCount) * i },
+          });
+
+          new BokehShape({
+            path: [{ z: 40 * (1 - Math.random() * Math.random()) + 32 }],
+            addTo: yRotor,
+            rotate: { x: ((Math.random() * 2 - 1) * TAU * 3) / 16 },
+            color: badColor.skin,
+            stroke: 1 + Math.random(),
+            bokehSize: 6,
+            bokehLimit: 74,
+          });
+        }
+      })();
+
+      // ----- birds ----- //
+
+      var birdRotor = new Zdog.Anchor({
+        addTo: illo,
+        rotate: { y: (TAU * -1) / 8 },
+      });
+
+      makeBird({
+        addTo: birdRotor,
+        color: madColor.parkaLight,
+        spin: TAU / 2,
+      });
+
+      makeBird({
+        addTo: birdRotor,
+        color: featherGold,
+        spin: (-TAU * 3) / 8,
+      });
+
+      makeBird({
+        addTo: birdRotor,
+        color: 'white',
+        spin: -TAU / 4,
+      });
+
+      makeBird({
+        addTo: birdRotor,
+        color: madColor.hair,
+        spin: -TAU / 8,
+      });
+
+      makeBird({
+        addTo: birdRotor,
+        color: madColor.parkaDark,
+        spin: TAU / 8,
+      });
+
+      // -- animate --- //
+
+      var isSpinning = true;
+      var rotateSpeed = -TAU / 60;
+      var xClock = 0;
+      var then = new Date() - 1 / 60;
+
+      function animate() {
+        update();
+        illo.renderGraph();
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+
+      // -- update -- //
+
+      function update() {
+        var now = new Date();
+        var delta = now - then;
+        // auto rotate
+        if (isSpinning) {
+          var theta = (rotateSpeed / 60) * delta * -1;
+          illo.rotate.y += theta;
+          xClock += theta / 4;
+          illo.rotate.x = (Math.sin(xClock) * TAU) / 12;
+        }
+
+        illo.updateGraph();
+
+        then = now;
+      }
+    </script>
+  </body>
+</html>
